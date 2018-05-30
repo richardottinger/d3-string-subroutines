@@ -1,5 +1,6 @@
-SUBROUTINE STRING.LEFT(SOMETHING,HOW.MANY,LEFT.CHARS)
+SUBROUTINE STRING.LEFT(SOMETHING,HOW_MANY,LEFT_CHARS)
+* DESCRIPTION: Returns a specified number of characters from the beginning of a string
    TOTAL.COUNT=LEN(SOMETHING)
-   IF HOW.MANY>TOTAL.COUNT THEN CRT "STRING.LEFT ERROR: You requested more characters than are available!"
-   LEFT.CHARS = SOMETHING[1,HOW.MANY]
+   IF HOW_MANY>TOTAL.COUNT THEN CRT "STRING.LEFT ERROR: You requested more characters than are available!"
+   LEFT_CHARS = SOMETHING[1,HOW_MANY]
 RETURN
